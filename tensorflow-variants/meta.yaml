@@ -2,7 +2,7 @@
 
 package:
   name: tensorflow-{{ variant }}
-  version: {{ version }}
+  version: {{ version }}.db1
 
 build:
   number: 0
@@ -10,7 +10,7 @@ build:
 
 requirements:
   run:
-    - tensorflow =={{ version }}
+    - tensorflow =={{ version }}.db1
     - _tflow_select =={{ select_version }}
 
 test:
