@@ -2,7 +2,7 @@
 
 package:
   name: tensorflow
-  version: {{ version }}
+  version: {{ version }}.db1
 
 build:
   number: 0

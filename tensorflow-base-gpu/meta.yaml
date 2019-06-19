@@ -3,7 +3,7 @@
 # This is the recipe for the "gpu" variant of tensorflow-base
 package:
   name: tensorflow-base
-  version: {{ version }}
+  version: {{ version }}.db1
 
 source:
   fn: tensorflow-{{ version }}.tar.gz
@@ -21,6 +21,7 @@ source:
     - 0010-add-additional-cuda-rpaths.patch                           # [linux]
     - 0011-patch-nccl-for-older-kernels.patch                         # [linux]
     - 0013-hardcode-internal-nccl-version-in-configure.patch          # [linux]
+    - 0014-prevent-stream-executor-construction-for-XLA-devices.patch # [linux]
 
 build:
   number: 0
